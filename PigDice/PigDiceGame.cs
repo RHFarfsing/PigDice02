@@ -18,7 +18,7 @@ namespace PigDice {
             return score;
         }
         public void Play() {
-            var WorldRecordScore = 566;
+            var WorldRecordScore = 581;
             var HighScore = 0;
             var GamesToPlay = 100000;
             while (GamesToPlay > 0 || HighScore<WorldRecordScore) {
