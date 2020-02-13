@@ -18,17 +18,17 @@ namespace PigDice {
             return score;
         }
         public void Play() {
-            var WorldRecordScore = 581;
+            var WorldRecordScore = 609;
             var HighScore = 0;
             var GamesToPlay = 100000;
             while (GamesToPlay > 0 || HighScore<WorldRecordScore) {
                 var score = PigDice();
                 if (score > HighScore) {
                     HighScore = score;
+            Console.WriteLine($"New World Record is {HighScore}");
                 }
                 GamesToPlay--;
             }
-            Console.WriteLine($"New World Record is {HighScore}");
         }
     }
 }
